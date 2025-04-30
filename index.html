@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AUTO BNB</title>
+  <title>AUTO BNB – Pixel Art Crypto</title>
   <style>
     body {
       margin: 0;
@@ -12,40 +12,80 @@
       color: #fcd535;
       image-rendering: pixelated;
     }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #111;
+      padding: 10px 20px;
+      border-bottom: 4px dashed #fcd535;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo-container img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    .logo-text {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .nav-links a {
+      color: #fcd535;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
     header, section, footer {
-      padding: 40px;
+      padding: 40px 20px;
       text-align: center;
       border-bottom: 2px dashed #fcd535;
     }
-    h1, h2, p {
-      margin: 0 0 20px;
+    h1 {
+      font-size: 32px;
     }
-    nav {
-      background-color: #111;
-      padding: 10px 0;
-      border-bottom: 4px solid #fcd535;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
     }
-    nav a {
-      color: #fcd535;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 20px;
-    }
-    .logo {
-      font-size: 36px;
+    .cta {
+      margin: 20px auto;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fcd535;
+      color: #000;
       font-weight: bold;
-      color: #fcd535;
+      font-size: 20px;
+      border: 2px solid #fcd535;
+      cursor: pointer;
     }
     footer {
       border-top: 4px solid #fcd535;
       border-bottom: none;
     }
+    .socials a {
+      font-size: 24px;
+      margin: 0 10px;
+      color: #fcd535;
+      text-decoration: none;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border: 2px solid #fcd535;
+    }
   </style>
 </head>
 <body>
   <nav>
-    <span class="logo">AUTO BNB</span>
-    <div>
+    <div class="logo-container">
+      <img src="logo.png" alt="AUTO BNB Logo" />
+      <div class="logo-text">AUTO BNB</div>
+    </div>
+    <div class="nav-links">
       <a href="#about">About</a>
       <a href="#tokenomics">Tokenomics</a>
       <a href="#roadmap">Roadmap</a>
@@ -55,33 +95,46 @@
   </nav>
 
   <header>
-    <h1>Welcome to AUTO BNB</h1>
+    <h1>WELCOME TO AUTO BNB</h1>
     <p>The pixel-art crypto revolution starts here.</p>
+    <div class="cta">LAUNCH SOON!</div>
   </header>
 
   <section id="about">
-    <h2>About</h2>
+    <h2>ABOUT</h2>
     <p>AUTO BNB is a community-driven project combining blockchain, automation, and pixel art culture.</p>
   </section>
 
   <section id="tokenomics">
-    <h2>Tokenomics</h2>
+    <h2>TOKENOMICS</h2>
     <p>Supply: 1,000,000<br>Buy Tax: 2% | Sell Tax: 6%<br>Rewards in BNB</p>
   </section>
 
   <section id="roadmap">
-    <h2>Roadmap</h2>
+    <h2>ROADMAP</h2>
     <p>Phase 1: Launch<br>Phase 2: Listings<br>Phase 3: NFTs<br>Phase 4: GameFi integration</p>
   </section>
 
   <section id="team">
-    <h2>Team</h2>
-    <p>Meet the pixel-art legends behind AUTO BNB. Anonymous, but legendary.</p>
+    <h2>TEAM</h2>
+    <p>Meet the pixel-art legends behind AUTO BNB.<br>Anonymous, but legendary.</p>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Join our community on Telegram, X (Twitter), and Discord.</p>
+    <h2>CONTACT</h2>
+    <div class="socials">
+      <a href="#">Telegram</a> |
+      <a href="#">X (Twitter)</a> |
+      <a href="#">Discord</a>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>GALLERY</h2>
+    <img src="donald-office.png" alt="Donald Trump Pixel Style" />
+    <img src="cz-logo.png" alt="Pixel CZ" />
+    <img src="elon-rocket.png" alt="Pixel Elon" />
+    <img src="minecraft-crew.png" alt="Minecraft Style Crew" />
   </section>
 
   <footer>
